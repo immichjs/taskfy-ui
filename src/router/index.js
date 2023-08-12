@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import TodayTasks from '@/components/TodayTasks.vue'
-import ImportantTasks from '@/components/ImportantTasks.vue'
-import CompletedTasks from '@/components/CompletedTasks.vue'
-import UncompletedTasks from '@/components/UncompletedTasks.vue'
-import AllTasks from '@/components/AllTasks.vue'
+import TodayTasks from '@/views/TodayTasks.vue'
+import ImportantTasks from '@/views/ImportantTasks.vue'
+import CompletedTasks from '@/views/CompletedTasks.vue'
+import UncompletedTasks from '@/views/UncompletedTasks.vue'
+import AllTasks from '@/views/AllTasks.vue'
 
 const routes = [
   { path: '/', component: AllTasks },

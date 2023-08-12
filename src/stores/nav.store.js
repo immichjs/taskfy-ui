@@ -2,11 +2,17 @@ import { defineStore } from 'pinia'
 
 export const useNavStore = defineStore('navbar', {
   state: () => ({
-    isActive: false
+    isActiveNavBar: false,
+    isActiveNavBarProfile: false,
   }),
   actions: {
     toggleNavBar(payload) {
-      this.isActive = payload
+      this.isActiveNavBar = payload
+    },
+    toggleNavBarProfile(payload) {
+      this.isActiveNavBarProfile = payload
+
+      console.log(this.isActiveNavBarProfile)
     }
   }
 })
